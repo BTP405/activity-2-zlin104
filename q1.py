@@ -1,11 +1,5 @@
 def getPrimeNumbers(n):
-    oldList = []
-    for i in range(2, n+1):
-        oldList.append(i)
-
-    print(oldList)
-    newlist = [x for x in oldList if isPrime(x)]
-    print(newlist)
+    newlist = [x for x in range(2, n+1) if isPrime(x)]
     return newlist
         
 
@@ -16,4 +10,4 @@ def isPrime(n):
             devisible+=1
     return True if devisible == 0 else False 
 
-getPrimeNumbers(4)
+getPrimeNumbers(6)

@@ -18,4 +18,7 @@ def printStats(t):
         lines.append(line)
     return lines
 
+"""
+test line
 printStats('a.txt')
+"""
